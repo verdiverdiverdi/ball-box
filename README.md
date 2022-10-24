@@ -14,7 +14,7 @@ As such, your python will need access to it.
 
 Given that I truncate an infinite sum, and use finite precision for Fresnel integrals, the volumes my script outputs are approximations.
 For the case of $s > n/3$ one can use the asymptotic estimate as a ground truth (for large enough $n$, whatever that means) to check whether the number of terms and the precision I choose are sufficient.
-For the case $s \in (1, 2)$, where only the spherical caps peaks outside the cube, one can use the formulas of [4] to determine the accuracy of the approximation as $n$ increases.
+For the case $s \in (1, 2)$, where only the spherical caps peak outside the cube, one can use the formulas of [4] to determine the accuracy of the approximation as $n$ increases.
 Using an experimentally observed heuristic (via Monte--Carlo sampling methods in dimensions up to $n = 80$, not reproduced here) that the approximation becomes more accurate as $s$ grows, the $s \in (1, 2)$ case represents an experimental worst case, and I therefore assume that for $s \approx 1$ these approximations are good for $n \leq 220$, and for $s \geq 2$ these approximations are good for $n \leq 250$ (see `findAccurateRange` in `accuracyTests.py`).
 
 Precomputed, high precision, values for the Fresnel integrals in a given dimension will be saved in a directory called `precomps` -- each will be about 3MB given current settings, so something to consider if planning on increasing the precision or number of terms, and approximating in many dimensions.
