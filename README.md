@@ -4,8 +4,8 @@ volume of intersection for high dimensional centred balls and cubes
 What is the volume of intersection of $B_n(1) \cap [-1/\sqrt{s}, 1/\sqrt{s}]^n$?
 When $s \leq 1$ or $s \geq n$ it is the volume of the ball or the cube, respectively.
 It was a fun adventure to find out when $s \in (1, n)$.
-The question was originally answered in [1], and a survey given in [2] (though initially both contained small errors).
-I later learnt that [3] had derived a more general formula for non centred oblongs, rather than centred cubes, that implicitly fixed the errors in [1,2].
+The question was originally answered in [1], and a survey given in [2] (which initially contained small errors).
+I later learnt that [3] had derived a more general formula for non centred oblongs, rather than centred cubes.
 The most recent revision of [2] is now correct.
 An asymptotic estimate is also provided in [3], which requires $s > n/3$ for centred cubes.
 
